@@ -1,33 +1,31 @@
 
 
----
-
 # 🍔 Food Server API
 
-  A robust, production-ready REST API built with **Node.js** and **Express.js** designed to power modern food delivery platforms. This    backend handles the heavy lifting of user lifecycle management, restaurant catalogs, and menu categorization.
+A robust, production-ready REST API built with **Node.js** and **Express.js** designed to power modern food delivery platforms. This backend handles the heavy lifting of user lifecycle management, restaurant catalogs, and menu categorization.
 
 ---
 
 ## 🚀 Key Features
 
-    🔐 Secure Authentication: Full JWT-based user login and registration system.
-    👤 Role-Based Management: Specialized logic for Users and Admin/Restaurant owners.
-	🍽️ Dynamic Catalog: Full CRUD operations for Restaurants and Food Items.
-    📂 Structured Categories: Efficient menu organization through category management.
-    🛡️ Production-Ready: Includes request logging (Morgan), security headers (CORS), and environment abstraction.
+* **🔐 Secure Authentication:** Full JWT-based user login and registration system.
+* **👤 Role-Based Management:** Specialized logic for Users and Admin/Restaurant owners.
+* **🍽️ Dynamic Catalog:** Full CRUD operations for Restaurants and Food Items.
+* **📂 Structured Categories:** Efficient menu organization through category management.
+* **🛡️ Production-Ready:** Includes request logging (Morgan), security headers (CORS), and environment abstraction.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category    | Technology |
-
-|  Runtime    | Node.js |
-|  Framework  | Express.js |
-|  Database   | MongoDB (via Mongoose ODM) |
-|  Security   | JWT (JSON Web Tokens), Dotenv, CORS |
-|  Logging    | Morgan |
-| Styling/CLI | Colors.js |
+| Category | Technology |
+| --- | --- |
+| **Runtime** | Node.js |
+| **Framework** | Express.js |
+| **Database** | MongoDB (via Mongoose ODM) |
+| **Security** | JWT (JSON Web Tokens), Dotenv, CORS |
+| **Logging** | Morgan |
+| **Styling/CLI** | Colors.js |
 
 ---
 
@@ -104,10 +102,10 @@ npm start
 
 ## 🔮 Roadmap & Improvements
 
-* [ ] Order Management: Real-time order tracking using WebSockets.
-* [ ] Payments: Stripe or Razorpay integration.
-* [ ] Reviews: Star rating system for food and service.
-* [ ] Media: Image hosting for food photos via Cloudinary.
+* [ ] **Order Management:** Real-time order tracking using WebSockets.
+* [ ] **Payments:** Stripe or Razorpay integration.
+* [ ] **Reviews:** Star rating system for food and service.
+* [ ] **Media:** Image hosting for food photos via Cloudinary.
 
 ---
 
@@ -124,4 +122,3 @@ If you found this project helpful, please consider giving it a **Star**!
 5. Open a Pull Request
 
 ---
-
