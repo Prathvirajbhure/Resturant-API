@@ -16,7 +16,7 @@ A robust, production-ready REST API built with Node.js and Express.js designed t
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Technology |
 | --- | --- |
@@ -29,7 +29,7 @@ A robust, production-ready REST API built with Node.js and Express.js designed t
 
 ---
 
-## 📂 Architecture
+##  Architecture
 
 ```text
 food-server/
@@ -45,7 +45,7 @@ food-server/
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 ### Authentication
 
@@ -65,7 +65,7 @@ food-server/
 
 ---
 
-## ⚙️ Quick Start
+##  Quick Start
 
 ### 1. Installation
 
@@ -109,7 +109,7 @@ npm start
 
 ---
 
-## ⭐ Support & Contributing
+##  Support & Contributing
 
 If you found this project helpful, please consider giving it a **Star**!
 
