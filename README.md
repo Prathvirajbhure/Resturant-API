@@ -1,18 +1,18 @@
 
 
-# 🍔 Food Server API
+#  Resturant API
 
-A robust, production-ready REST API built with **Node.js** and **Express.js** designed to power modern food delivery platforms. This backend handles the heavy lifting of user lifecycle management, restaurant catalogs, and menu categorization.
+A robust, production-ready REST API built with Node.js and Express.js designed to power modern food delivery platforms. This backend handles the heavy lifting of user lifecycle management, restaurant catalogs, and menu categorization.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-* **🔐 Secure Authentication:** Full JWT-based user login and registration system.
-* **👤 Role-Based Management:** Specialized logic for Users and Admin/Restaurant owners.
-* **🍽️ Dynamic Catalog:** Full CRUD operations for Restaurants and Food Items.
-* **📂 Structured Categories:** Efficient menu organization through category management.
-* **🛡️ Production-Ready:** Includes request logging (Morgan), security headers (CORS), and environment abstraction.
+*  Secure Authentication: Full JWT-based user login and registration system.
+*  Role-Based Management: Specialized logic for Users and Admin/Restaurant owners.
+*  Dynamic Catalog: Full CRUD operations for Restaurants and Food Items.
+*  Structured Categories: Efficient menu organization through category management.
+*  Production-Ready: Includes request logging (Morgan), security headers (CORS), and environment abstraction.
 
 ---
 
@@ -100,12 +100,12 @@ npm start
 
 ---
 
-## 🔮 Roadmap & Improvements
+##  Roadmap & Improvements
 
-* [ ] **Order Management:** Real-time order tracking using WebSockets.
-* [ ] **Payments:** Stripe or Razorpay integration.
-* [ ] **Reviews:** Star rating system for food and service.
-* [ ] **Media:** Image hosting for food photos via Cloudinary.
+* [ ] Order Management: Real-time order tracking using WebSockets.
+* [ ] Payments: Stripe or Razorpay integration.
+* [ ] Reviews: Star rating system for food and service.
+* [ ] Media: Image hosting for food photos via Cloudinary.
 
 ---
 
