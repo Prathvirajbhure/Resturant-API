@@ -1,146 +1,127 @@
 
-🍔 Food Server API (Node.js + Express)
 
-A backend REST API built using Node.js and Express.js for managing a food ordering system.
-This server handles authentication, users, restaurants, food items, and categories.
+---
 
-The API is designed to be used with a frontend application (React / Web / Mobile) for a complete food ordering platform.
+# 🍔 Food Server API
 
-⸻
+  A robust, production-ready REST API built with **Node.js** and **Express.js** designed to power modern food delivery platforms. This    backend handles the heavy lifting of user lifecycle management, restaurant catalogs, and menu categorization.
 
-🚀 Features
-	•	🔐 User authentication system
-	•	👤 User management
-	•	🍽️ Restaurant management
-	•	🍕 Food item management
-	•	📂 Category management
-	•	🌐 RESTful API structure
-	•	🧾 Request logging with Morgan
-	•	🔓 CORS enabled for frontend communication
-	•	🌱 Environment variable configuration with Dotenv
-	•	🗄️ MongoDB database connection
+---
 
-⸻
+## 🚀 Key Features
 
-🛠️ Technologies Used
-	•	Node.js
-	•	Express.js
-	•	MongoDB
-	•	Mongoose
-	•	Cors
-	•	Morgan
-	•	Dotenv
-	•	Colors
+    🔐 Secure Authentication: Full JWT-based user login and registration system.
+    👤 Role-Based Management: Specialized logic for Users and Admin/Restaurant owners.
+	🍽️ Dynamic Catalog: Full CRUD operations for Restaurants and Food Items.
+    📂 Structured Categories: Efficient menu organization through category management.
+    🛡️ Production-Ready: Includes request logging (Morgan), security headers (CORS), and environment abstraction.
 
-⸻
+---
 
-📂 Project Structure
+## 🛠️ Tech Stack
 
+| Category    | Technology |
+
+|  Runtime    | Node.js |
+|  Framework  | Express.js |
+|  Database   | MongoDB (via Mongoose ODM) |
+|  Security   | JWT (JSON Web Tokens), Dotenv, CORS |
+|  Logging    | Morgan |
+| Styling/CLI | Colors.js |
+
+---
+
+## 📂 Architecture
+
+```text
 food-server/
-│
-├── config/
-│   └── db.js
-│
-├── routes/
-│   ├── authRoutes.js
-│   ├── userRoutes.js
-│   ├── resturantRoutes.js
-│   ├── categoryRoutes.js
-│   └── foodRoutes.js
-│
-├── .env
-├── server.js
-├── package.json
-└── README.md
+├── config/             # Database & global configurations
+├── controllers/        # Business logic (highly recommended)
+├── middlewares/        # Auth & validation checks
+├── models/             # Mongoose schemas (Data structure)
+├── routes/             # API Endpoint definitions
+├── .env                # Private environment variables
+└── server.js           # Application entry point
 
+```
 
-⸻
+---
 
-⚙️ Environment Variables
+## 📡 API Reference
 
-Create a .env file in the root directory and add:
+### Authentication
 
-PORT=8080
-MONGO_URL=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `POST` | `/api/v1/auth/register` | Register a new user |
+| `POST` | `/api/v1/auth/login` | User login & token generation |
 
+### Resource Management
 
-⸻
+| Resource | Base Route | Functionality |
+| --- | --- | --- |
+| **Users** | `/api/v1/user` | Profile updates, password reset |
+| **Restaurants** | `/api/v1/resturant` | List, search, and manage outlets |
+| **Categories** | `/api/v1/category` | Organize food by type |
+| **Food** | `/api/v1/food` | Manage menu items and prices |
 
-📡 API Routes
+---
 
-Authentication
-  => /api/v1/auth
-Users
-  => /api/v1/user
-Restaurants
-  =>/api/v1/resturant
-Categories
-  =>/api/v1/category
-Food Items
-  =>/api/v1/food
+## ⚙️ Quick Start
 
-⸻
+### 1. Installation
 
-🚀 How to Run the Project
-
-1️⃣ Clone the repository
-
+```bash
 git clone https://github.com/Prathvirajbhure/Resturant-API.git
-
-2️⃣ Navigate into the project folder
-
-cd fResturant-API
-
-3️⃣ Install dependencies
-
+cd Resturant-API
 npm install
 
-4️⃣ Run the server
+```
 
+### 2. Configuration
+
+Create a `.env` file in the root directory:
+
+```env
+PORT=8080
+MONGO_URL=your_mongodb_connection_string
+JWT_SECRET=your_super_secret_key
+
+```
+
+### 3. Execution
+
+```bash
+# Development mode
+npm run dev
+
+# Production mode
 npm start
 
-or
+```
 
-node server.js
+---
 
+## 🔮 Roadmap & Improvements
 
-⸻
+* [ ] Order Management: Real-time order tracking using WebSockets.
+* [ ] Payments: Stripe or Razorpay integration.
+* [ ] Reviews: Star rating system for food and service.
+* [ ] Media: Image hosting for food photos via Cloudinary.
 
-🌐 Server URL
+---
 
-http://localhost:8080
+## ⭐ Support & Contributing
 
-When running successfully, the server will display:
+If you found this project helpful, please consider giving it a **Star**!
 
-Node Server running 8080
+**Contributions:**
 
-Opening the root route will show:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Welcome to Food server App
+---
 
-
-⸻
-
-📋 Middleware Used
-	•	CORS → Enables frontend communication
-	•	Express.json() → Parses JSON request body
-	•	Morgan → Logs API requests in development mode
-
-⸻
-
-🔮 Future Improvements
-
-Possible upgrades for this project:
-	•	🛒 Order management system
-	•	💳 Payment gateway integration
-	•	📱 Mobile app support
-	•	⭐ Food rating and reviews
-	•	🧑‍🍳 Admin dashboard
-	•	📦 Image upload for food items
-
-⸻
-
-⭐ Support
-
-If you find this project useful, consider giving it a ⭐ on GitHub.
